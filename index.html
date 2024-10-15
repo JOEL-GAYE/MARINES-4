@@ -1,33 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Mkulima Solutions - Poultry Diseases</title>  
 </head>
 <body>
-  <h1>My To-Do List</h1>
-  <form id="create-task-form" action="#" method="POST">
-    <label for="new-task-description">Task description:</label>
-    <input type="text" id="new-task-description" name="new-task-description" placeholder="Enter your task" />
+    <nav class="navbar navbar-expand-md bg-success navbar-dark">
 
-    <label for="priority">Priority:</label>
-    <select id="priority" name="Priority">
-      <option value="">Low</option>
-      <option value="">Medium</option>
-      <option value="">High</option>
-    </select>
+        <a class="navbar-brand" href="">
+         <img class="logo" src="./assets/ndogo.jpg" alt="KukuChic Logo" >
+        </a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+    
+           <li class="nav-item">
+              <a title="Visit our Robust Poultry Learning Center" href="" target="_blank" class="nav-link">Learning Center</a>
+           </li>
+           
+           <!-- Dropdown Link -->
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Departments
+              </a>
+              <div class="dropdown-menu">
+                <a href="https://kukuchic.co.ke/department/head_office" class="dropdown-item">Head Office</a>
+                <a href="https://kukuchic.co.ke/department/breeder_farm" class="dropdown-item">Breeder Farm</a>
+                <a href="https://kukuchic.co.ke/department/hatchery" class="dropdown-item">Hatchery</a>
+                <a href="https://kukuchic.co.ke/department/marketing" class="dropdown-item">Marketing</a>
+                <a href="https://kukuchic.co.ke/department/logistics" class="dropdown-item">Logistics</a>
+              </div>
+           </li>
+    
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Our Products
+              </a>
+              <div class="dropdown-menu">
+                <a href="https://kukuchic.co.ke/product/rainbow_rooster" class="dropdown-item">Rainbow Rooster</a>
+                <a href="https://kukuchic.co.ke/product/kuroiler" class="dropdown-item">Kuroiler</a>
+                <a href="https://kukuchic.co.ke/product/sasu-F1" class="dropdown-item">sasu-F1</a>
+                <a href="https://kukuchic.co.ke/product/table_eggs" class="dropdown-item">Table Eggs</a>
+              </div>
+           </li>
+    
+           <li class="nav-item">
+            <a title="Resource Downloads!" href="" class="nav-link">Downloads</a>
+           </li>
+    
+           <li class="nav-item">
+            <a href="" class="nav-link">Notice Board</a>
+           </li>
+    
+           <li class="nav-item">
+            <a href="" class="nav-link">Sales Team</a>
+           </li>
+           <li class="nav-item">
+            <a href="" class="nav-link">Agents</a>
+           </li>
+           <li class="nav-item">
+            <a class="navbar-brand" href="https://kukuchic.co.ke/products/kuroiler">
+              <img class="brand" src="./assets/kienyeji.png" alt="KukuChic Products" >
+            </a>
+           </li>
+          </ul>
+        </div>
+     </nav>
+    
+    <main>
+        <form action="" class="vaccine"></form>
+        <h2>Common Poultry Diseases</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Disease Name</th>
+                    <th>Image</th>
+                    <th>Symptoms</th>
+                    <th>Prevention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Newcastle Disease</td>
+                    <td><img src="./assets/newcastle.jpeg" alt="Newcastle Disease"></td>
+                    <td>Respiratory distress, twisted neck, diarrhea</td>
+                    <td>Vaccination, biosecurity measures</td>
+                </tr>
+                <tr>
+                    <td>Fowl Pox</td>
+                    <td><img src="./assets/fowlpox.jpg" alt="Fowl Pox"></td>
+                    <td>White or yellow lesions on the skin and mouth</td>
+                    <td>Vaccination, mosquito control</td>
+                </tr>
+                <tr>
+                    <td>Coccidiosis</td>
+                    <td><img src="./assets/Coccidiosis.webp" alt="Coccidiosis"></td>
+                    <td>Blood in feces, reduced appetite, droopy feathers</td>
+                    <td>Sanitation, coccidiostats in feed</td>
+                </tr>
+            </tbody>
+        </table>
+      
 
-    <input type="submit" value="Create New Task" />
-  </form>
-  <div id="list">
-
-  <ul id="tasks">
-
-  </ul>
-</div>
-
-  <script src="./src/index.js"></script>
+        <div class="btn-container">
+            <button onclick="alert('For more information, contact us at toluchicks001@gmail.com')">Contact Us</button>
+            <button onclick="alert('More diseases coming soon! Stay tuned.')">See More Diseases</button>
+        </div>
+    </main>
+    <ol id="notes">
+        <li>Follow the Vaccination schedule properly.</li>
+        <li>Seperate the sick birds from the healthy ones.</li>
+        <li>Quality feeds = Healthy birds.</li>
+        <li>Ensure the henhouse is always clean.</li>
+        <li>Proper handling of eggs.</li>
+       </ol>
+    <footer>
+        &copy; 2024 Mkulima Solutions. All rights reserved.
+    </footer>
 </body>
 </html>
