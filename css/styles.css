@@ -59,7 +59,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position:relative;
     width: 100%;
     bottom: 0;
 }
@@ -99,4 +99,11 @@ footer {
 
 .navbar .nav a:hover {
     color: #fdfdfd;
+}
+.btn btn-outline-warning:hover{
+    background-color: #ee2e2e; 
+}
+.form-control submit{
+    display: flex;
+    padding: 30%;
 }
