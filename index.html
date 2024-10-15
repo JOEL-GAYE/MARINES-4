@@ -174,16 +174,18 @@
             <button
                 onclick="alert('For more information, contact us at toluchicks001@gmail.com or call 0701225572')">Contact
                 Us</button>
-            <button onclick="alert('More diseases coming soon! Stay tuned.')">See More Diseases</button>
+            <!-- <button onclick="alert('More diseases coming soon! Stay tuned.')">See More Diseases</button> -->
+            <button type="button" class="add">ADD DISEASES</button>
         </div>
+        
     </main>
-    <ol id="notes">
+    <ul id="notes">
         <li>Follow the Vaccination schedule properly.</li>
         <li>Seperate the sick birds from the healthy ones.</li>
         <li>Quality feeds = Healthy birds.</li>
         <li>Ensure the henhouse is always clean.</li>
         <li>Proper handling of eggs.</li>
-    </ol>
+    </ul>
     <div class="mb-3">
         <h4>Questions.</h4>
         <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -200,8 +202,6 @@
             <h3 id="subscribe">Subscribe</h3>
             <p>Leave your email here for regular tips, notifications and new products!</p>
             <form action="" method="post" accept-charset="utf-8">
-                <input type="hidden" name="csrf_test_name" value="14097a087dba2ef80ca2b83e5a5a3b60" />
-
                 <div class="email-form">
                     <span class="form-control-wrap">
                         <input type="email" name="email" id="email" size="40" class="form-control"

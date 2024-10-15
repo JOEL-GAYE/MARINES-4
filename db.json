@@ -1,1 +1,61 @@
-{}
+{
+    
+        "diseases": [
+          {
+            "id": 1,
+            "name": "Newcastle Disease",
+            "symptoms": [
+              "Respiratory distress",
+              "Coughing and sneezing",
+              "Nervous signs",
+              "Diarrhea"
+            ],
+            "causes": [
+              "Newcastle disease virus (NDV)"
+            ],
+            "treatment": [
+              "No specific treatment available",
+              "Vaccination as prevention"
+            ]
+          },
+         
+         
+          {
+            "id": 2,
+            "name": "Coccidiosis",
+            "symptoms": [
+              "Bloody diarrhea",
+              "Weight loss",
+              "Poor growth",
+              "Lethargy"
+            ],
+            "causes": [
+              "Coccidia parasites"
+            ],
+            "treatment": [
+              "Anticoccidial drugs",
+              "Improved sanitation",
+              "Vaccination for prevention"
+            ]
+          },
+          
+          {
+            "id": 3,
+            "name": "Fowl Cholera",
+            "symptoms": [
+              "Swollen wattles",
+              "Discharge from mouth and nose",
+              "Diarrhea",
+              "Sudden death"
+            ],
+            "causes": [
+              "Pasteurella multocida bacteria"
+            ],
+            "treatment": [
+              "Antibiotics like sulfonamides or tetracyclines",
+              "Vaccination as prevention"
+            ]
+          }
+        ]
+      }
+      
