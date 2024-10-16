@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to remove a row from the table and delete from the server
   function deleteDiseaseRow(button, diseaseId) {
     const row = button.parentElement.parentElement; // Get the parent row of the clicked button
-    fetch(`http://localhost:3000/diseases/${diseaseId}`, { method: "DELETE" }) // Delete from server
+    fetch(`https://my-json-server.typicode.com/JOEL-GAYE/Marine/diseases/${diseaseId}`, { method: "DELETE" }) // Delete from server
       .then((response) => {
         if (response.ok) {
           row.remove(); // Remove the row from the table
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch existing diseases from the server
   function fetchDiseases() {
-    fetch("http://localhost:3000/diseases") // Fetch from JSON Server
+    fetch("https://my-json-server.typicode.com/JOEL-GAYE/Marine/diseases") // Fetch from JSON Server
       .then((response) => response.json())
       .then((data) => {
         data.forEach((disease) => {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       // Save new disease to db.json via JSON Server
-      fetch("http://localhost:3000/diseases", {
+      fetch("https://my-json-server.typicode.com/JOEL-GAYE/Marine/diseases", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (email) {
       // Save email to db.json via JSON Server
-      fetch("http://localhost:3000/subscribers", {
+      fetch("https://my-json-server.typicode.com/JOEL-GAYE/Marine/subscribers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Validate email and question
     if (email && question) {
       // Save question to db.json via JSON Server
-      fetch("http://localhost:3000/questions", {
+      fetch("https://my-json-server.typicode.com/JOEL-GAYE/Marine/questions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
