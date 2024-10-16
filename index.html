@@ -12,74 +12,46 @@
 
 <body>
     <nav class="navbar navbar-expand-md bg-success navbar-dark">
-
-        <a class="navbar-brand" href="">
-            <img class="logo" src="./assets/ndogo.jpg" alt="KukuChic Logo">
-        </a>
-
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-
-                <li class="nav-item">
-                    <a title="Visit our Robust Poultry Learning Center" href="" target="_blank"
-                        class="nav-link">Learning Center</a>
-                </li>
-
-                <!-- Dropdown Link -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Departments
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Head Office</a>
-                        <a href="" class="dropdown-item">Breeder Farm</a>
-                        <a href="" class="dropdown-item">Hatchery</a>
-                        <a href="" class="dropdown-item">Marketing</a>
-                        <a href="" class="dropdown-item">Logistics</a>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Our Products
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">Rainbow
-                            Rooster</a>
-                        <a href="" class="dropdown-item">Kuroiler</a>
-                        <a href="" class="dropdown-item">sasu-F1</a>
-                        <a href="" class="dropdown-item">Table Eggs</a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a title="Resource Downloads!" href="" class="nav-link">Downloads</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="" class="nav-link">Notice Board</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="" class="nav-link">Sales Team</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Agents</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar-brand" href="">
-                        <img class="brand" src="./assets/kienyeji.png" alt="KukuChic Products">
-                    </a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img class="logo" src="./assets/ndogo.jpg" alt="Mkulima Solutions logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>Sasu F1</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>Rainbow Rooster</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>Fertlized Eggs</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>Antibiotics</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>Vaccines</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>Feeders and Drinkers</li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
-
 
     <main>
         <form action="" class="vaccine">
@@ -126,7 +98,7 @@
                     <tr>
                         <td>Week 8</td>
                         <td>Fowl Typhoid Vaccine</td>
-                        <td>Thigh Muscle </td>
+                        <td>Thigh Muscle</td>
                     </tr>
                     <tr>
                         <td>Week 16</td>
@@ -136,7 +108,7 @@
                 </tbody>
             </table>
         </form>
-        <form action="" class="disease"></form>
+
         <h2>Common Poultry Diseases</h2>
         <table>
             <thead>
@@ -147,76 +119,58 @@
                     <th>Prevention</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Newcastle Disease</td>
-                    <td><img src="./assets/newcastle.jpeg" alt="Newcastle Disease"></td>
-                    <td>Respiratory distress, twisted neck, diarrhea</td>
-                    <td>Vaccination, biosecurity measures</td>
-                </tr>
-                <tr>
-                    <td>Fowl Pox</td>
-                    <td><img src="./assets/fowlpox.jpg" alt="Fowl Pox"></td>
-                    <td>White or yellow lesions on the skin and mouth</td>
-                    <td>Vaccination, mosquito control</td>
-                </tr>
-                <tr>
-                    <td>Coccidiosis</td>
-                    <td><img src="./assets/Coccidiosis.webp" alt="Coccidiosis"></td>
-                    <td>Blood in feces, reduced appetite, droopy feathers</td>
-                    <td>Sanitation, coccidiostats in feed</td>
-                </tr>
+            <tbody id="diseaseTableBody">
+                <!-- Diseases will be populated here from API -->
             </tbody>
         </table>
 
-
         <div class="btn-container">
-            <button
-                onclick="alert('For more information, contact us at toluchicks001@gmail.com or call 0701225572')">Contact
+            <button onclick="alert('For more information, contact us at toluchicks001@gmail.com or call 0701225572')">Contact
                 Us</button>
-            <button type="button" class="add">ADD DISEASES</button>
+            <button type="button" id="addDiseaseBtn" class="add">ADD DISEASES</button>
         </div>
-        
+
+        <ul id="notes">
+            <li>Follow the Vaccination schedule properly.</li>
+            <li>Seperate the sick birds from the healthy ones.</li>
+            <li>Quality feeds = Healthy birds.</li>
+            <li>Ensure the henhouse is always clean.</li>
+            <li>Proper handling of eggs.</li>
+        </ul>
+
+        <div class="mb-3">
+            <h4>Questions.</h4>
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter your questions</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-warning" id="submitQuestionBtn">SUBMIT</button>
+
+        <footer id="footer">
+            <div>
+                <h3 id="subscribe">Subscribe</h3>
+                <p>Leave your email here for regular tips, notifications and new products!</p>
+                <form action="" method="post" accept-charset="utf-8" id="subscribeForm">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input type="email" name="email" id="email" size="40" class="form-control"
+                                placeholder="Your working email" value="" required="required">
+                        </span>
+                        <button type="submit" class="form-control submit">
+                            <i class="fas fa-chevron-right text-danger"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            &copy; 2024 Mkulima Solutions. All rights reserved.
+        </footer>
     </main>
-    <ul id="notes">
-        <li>Follow the Vaccination schedule properly.</li>
-        <li>Seperate the sick birds from the healthy ones.</li>
-        <li>Quality feeds = Healthy birds.</li>
-        <li>Ensure the henhouse is always clean.</li>
-        <li>Proper handling of eggs.</li>
-    </ul>
-    <div class="mb-3">
-        <h4>Questions.</h4>
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Enter your questions</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-    </div>
-    <button type="submit" class="btn btn-outline-warning">SUBMIT</button>
-    <footer id="footer">
 
-        <div>
-            <h3 id="subscribe">Subscribe</h3>
-            <p>Leave your email here for regular tips, notifications and new products!</p>
-            <form action="" method="post" accept-charset="utf-8">
-                <div class="email-form">
-                    <span class="form-control-wrap">
-                        <input type="email" name="email" id="email" size="40" class="form-control"
-                            placeholder="Your working email" value="" required="required">
-                    </span>
-                    <button type="submit" class="form-control submit">
-                        <i class="fas fa-chevron-right text-danger"></i>
-                    </button>
-                </div>
-            </form>
-
-        </div>
-
-        &copy; 2024 Mkulima Solutions. All rights reserved.
-    </footer>
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

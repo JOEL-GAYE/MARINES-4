@@ -1,61 +1,64 @@
 {
-    
-        "diseases": [
-          {
-            "id": 1,
-            "name": "Newcastle Disease",
-            "symptoms": [
-              "Respiratory distress",
-              "Coughing and sneezing",
-              "Nervous signs",
-              "Diarrhea"
-            ],
-            "causes": [
-              "Newcastle disease virus (NDV)"
-            ],
-            "treatment": [
-              "No specific treatment available",
-              "Vaccination as prevention"
-            ]
-          },
-         
-         
-          {
-            "id": 2,
-            "name": "Coccidiosis",
-            "symptoms": [
-              "Bloody diarrhea",
-              "Weight loss",
-              "Poor growth",
-              "Lethargy"
-            ],
-            "causes": [
-              "Coccidia parasites"
-            ],
-            "treatment": [
-              "Anticoccidial drugs",
-              "Improved sanitation",
-              "Vaccination for prevention"
-            ]
-          },
-          
-          {
-            "id": 3,
-            "name": "Fowl Cholera",
-            "symptoms": [
-              "Swollen wattles",
-              "Discharge from mouth and nose",
-              "Diarrhea",
-              "Sudden death"
-            ],
-            "causes": [
-              "Pasteurella multocida bacteria"
-            ],
-            "treatment": [
-              "Antibiotics like sulfonamides or tetracyclines",
-              "Vaccination as prevention"
-            ]
-          }
-        ]
+  "vaccinationSchedule": [
+      {
+          "day": "DAY 1",
+          "vaccine": "Mereks Vaccine",
+          "administration": "IM"
+      },
+      {
+          "day": "DAY 6",
+          "vaccine": "NCD Vaccine",
+          "administration": "Eye Drops"
+      },
+      {
+          "day": "DAY 14",
+          "vaccine": "Gumboro Vaccine",
+          "administration": "Eye Drops"
+      },
+      {
+          "day": "DAY 21",
+          "vaccine": "Gumboro Vaccine",
+          "administration": "Drinking Water"
+      },
+      {
+          "day": "DAY 28",
+          "vaccine": "NCD Vaccine",
+          "administration": "Drinking Water"
+      },
+      {
+          "day": "Week 6",
+          "vaccine": "Fowlpox Vaccine",
+          "administration": "Wing Stab"
+      },
+      {
+          "day": "Week 8",
+          "vaccine": "Fowl Typhoid Vaccine",
+          "administration": "Thigh Muscle"
+      },
+      {
+          "day": "Week 16",
+          "vaccine": "Dewormer",
+          "administration": "Drinking Water"
       }
-      
+  ],
+  "diseases": [
+      {
+          "name": "Newcastle Disease",
+          "image": "./assets/newcastle.jpeg",
+          "symptoms": "Respiratory distress, twisted neck, diarrhea",
+          "prevention": "Vaccination, biosecurity measures"
+      },
+      {
+          "name": "Fowl Pox",
+          "image": "./assets/fowlpox.jpg",
+          "symptoms": "White or yellow lesions on the skin and mouth",
+          "prevention": "Vaccination, mosquito control"
+      },
+      {
+          "name": "Coccidiosis",
+          "image": "./assets/Coccidiosis.webp",
+          "symptoms": "Blood in feces, reduced appetite, droopy feathers",
+          "prevention": "Sanitation, coccidiostats in feed"
+      }
+  ]
+}

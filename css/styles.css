@@ -110,3 +110,6 @@ footer {
 .btn-info :hover{
     background-color: #0047f9;
 }
+.dropdown-menu{
+    color: #0047f9;
+}
