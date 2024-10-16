@@ -1,64 +1,49 @@
 {
-  "vaccinationSchedule": [
-      {
-          "day": "DAY 1",
-          "vaccine": "Mereks Vaccine",
-          "administration": "IM"
-      },
-      {
-          "day": "DAY 6",
-          "vaccine": "NCD Vaccine",
-          "administration": "Eye Drops"
-      },
-      {
-          "day": "DAY 14",
-          "vaccine": "Gumboro Vaccine",
-          "administration": "Eye Drops"
-      },
-      {
-          "day": "DAY 21",
-          "vaccine": "Gumboro Vaccine",
-          "administration": "Drinking Water"
-      },
-      {
-          "day": "DAY 28",
-          "vaccine": "NCD Vaccine",
-          "administration": "Drinking Water"
-      },
-      {
-          "day": "Week 6",
-          "vaccine": "Fowlpox Vaccine",
-          "administration": "Wing Stab"
-      },
-      {
-          "day": "Week 8",
-          "vaccine": "Fowl Typhoid Vaccine",
-          "administration": "Thigh Muscle"
-      },
-      {
-          "day": "Week 16",
-          "vaccine": "Dewormer",
-          "administration": "Drinking Water"
-      }
-  ],
   "diseases": [
-      {
-          "name": "Newcastle Disease",
-          "image": "./assets/newcastle.jpeg",
-          "symptoms": "Respiratory distress, twisted neck, diarrhea",
-          "prevention": "Vaccination, biosecurity measures"
-      },
-      {
-          "name": "Fowl Pox",
-          "image": "./assets/fowlpox.jpg",
-          "symptoms": "White or yellow lesions on the skin and mouth",
-          "prevention": "Vaccination, mosquito control"
-      },
-      {
-          "name": "Coccidiosis",
-          "image": "./assets/Coccidiosis.webp",
-          "symptoms": "Blood in feces, reduced appetite, droopy feathers",
-          "prevention": "Sanitation, coccidiostats in feed"
-      }
+    {
+      "name": "Newcastle Disease",
+      "image": "./assets/newcastle.jpeg",
+      "symptoms": "Respiratory distress, twisted neck, diarrhea",
+      "prevention": "Vaccination, biosecurity measures",
+      "id": "a51b"
+    },
+    {
+      "name": "Fowl Pox",
+      "image": "./assets/fowlpox.jpg",
+      "symptoms": "White or yellow lesions on the skin and mouth",
+      "prevention": "Vaccination, mosquito control",
+      "id": "961e"
+    }
+  ],
+  "subscribers": [
+    {
+      "id": "e548",
+      "email": "joelgaye17@outlook.com"
+    },
+    {
+      "id": "d96c",
+      "email": "vespijoaquin.freelancer@gmail.com"
+    },
+    {
+      "id": "37eb",
+      "email": "barrykhwats@outlook.com"
+    }
+  ],
+  "questions": [
+    {
+      "id": "cd5a",
+      "email": "joelgaye.gmail.com",
+      "question": "sudden deaths"
+    },
+    {
+      "id": "ab30",
+      "email": "kudonjo@yahoo.com",
+      "question": "my chicks are super active"
+    },
+    {
+      "id": "33d9",
+      "email": "kenya@outlook.com",
+      "question": "why"
+    }
   ]
 }
