@@ -10,4 +10,4 @@
 -Poultry Diseases: Lists the most common diseases with descriptions and symptoms.
 -Treatments: Provides treatment recommendations for each disease.
 -Prevention: Offers tips and strategies for disease prevention.
--Contact: A form or details where users can get more information or ask specific questions.
+
