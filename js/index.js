@@ -200,3 +200,65 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+document.getElementById("searchForm").addEventListener("submit", function(event) {
+  event.preventDefault();  // Prevent the form from submitting
+  const query = document.getElementById("searchInput").value.toLowerCase();
+  
+  // Get all disease rows from the table
+  const diseaseRows = document.querySelectorAll("#diseaseTableBody tr");
+
+  // Clear any previous search results and remove previous highlights
+  diseaseRows.forEach(row => {
+      row.style.display = "";  // Reset visibility of all rows
+      
+      // Remove existing highlight spans
+      row.querySelectorAll('span.highlight').forEach(span => {
+          const parent = span.parentNode;
+          parent.replaceChild(document.createTextNode(span.textContent), span);
+          parent.normalize();  // Combine adjacent text nodes
+      });
+  });
+
+  // Check if the search query matches any disease names, symptoms, or prevention
+  let found = false;
+  diseaseRows.forEach(row => {
+      const diseaseNameCell = row.querySelector("td:nth-child(1)");
+      const symptomsCell = row.querySelector("td:nth-child(3)");
+      const preventionCell = row.querySelector("td:nth-child(4)");
+
+      const diseaseName = diseaseNameCell.textContent.toLowerCase();
+      const symptoms = symptomsCell.textContent.toLowerCase();
+      const prevention = preventionCell.textContent.toLowerCase();
+
+      // Highlight function to wrap the matching text
+      const highlightMatch = (cell, text, query) => {
+          const innerHTML = text.replace(new RegExp(query, 'gi'), match => {
+              return `<span class="highlight">${match}</span>`;
+          });
+          cell.innerHTML = innerHTML;
+      };
+      
+      if (diseaseName.includes(query) || symptoms.includes(query) || prevention.includes(query)) {
+          found = true; // If match found, leave row visible
+          if (diseaseName.includes(query)) {
+              highlightMatch(diseaseNameCell, diseaseNameCell.textContent, query);
+          }
+          if (symptoms.includes(query)) {
+              highlightMatch(symptomsCell, symptomsCell.textContent, query);
+          }
+          if (prevention.includes(query)) {
+              highlightMatch(preventionCell, preventionCell.textContent, query);
+          }
+      } else {
+          row.style.display = "none";  // Hide row if no match
+      }
+  });
+
+  // If no match is found
+  if (!found) {
+      alert("No matching vaccines or diseases found");
+  }
+
+  // Clear the search form
+  document.getElementById("searchInput").value = "";
+});
