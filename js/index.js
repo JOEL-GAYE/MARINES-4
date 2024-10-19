@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to remove a row from the table and delete from the server
   function deleteDiseaseRow(button, diseaseId) {
     const row = button.parentElement.parentElement; // Get the parent row of the clicked button
-    fetch(`https://my-json-server.typicode.com/JOEL-GAYE/Marine/diseases/${diseaseId}`, { method: "DELETE" }) // Delete from server
+    fetch(`https://my-json-server.typicode.com/JOEL-GAYE/Marine/diseases/${diseaseId}`, 
+      { method: "DELETE" }) // Delete from server
       .then((response) => {
         if (response.ok) {
           row.remove(); // Remove the row from the table
@@ -262,3 +263,4 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
   // Clear the search form
   document.getElementById("searchInput").value = "";
 });
+

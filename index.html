@@ -54,8 +54,13 @@
                             <li>Feeders and Drinkers</li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="mailto:toluchick001@gmail.com">toluchick001@gmail.com</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <form class="d-flex" role="search" id="searchForm">
@@ -68,6 +73,36 @@
     </nav>
 
     <main>
+        <div class="poster-container">
+            <h1>Mkulima Solutions SALES</h1>
+            <p>Order Chicks !!</p>
+            <p>Mereks vaccine administered !!</p>
+            <img src="./assets/ndogo.jpg" alt="Poster Image">
+            <img src="./assets/Day-old-chicks-in-a-transportation-crate.png" alt="Poster Image">
+            <img src="./assets/kukundongo.jpg" alt="Poster Image">
+            <p>QUALITY FEEDS = HEALTHY BIRDS </p>
+            <p id="price"> @100 KES </p>
+             <p>Date: 25th October 2024 | Location:  MKULIMA FARM</p>
+             <p>To Place an Order chat with us @ Contact Us</p> 
+             <div class="container mt-5">
+                <h2>Chicks and Prices Form</h2>
+                <form id="orderForm">
+                    <!-- Chicks and Prices Dropdown -->
+                    <div class="mb-3">
+                        <label for="chickPriceDropdown" class="form-label">Select Chick Type</label>
+                        <select class="form-select" id="chickPriceDropdown" name="chickPrice" required>
+                            <option value="" selected disabled>Select chick type</option>
+                            <option value="100 KES">2 Day old Chick - 100 KES</option>
+                            <option value="150 KES">1 Week Old Chick - 150 KES</option>
+                            <option value="200 KES">2 Weeks Old Chick - 200 KES</option>
+                            <option value="250 KES">3 Weeks Old Chick - 250 KES</option>
+                            <option value="300 KES">4 Weeks Old Chick - 300 KES</option>
+                        </select>
+                    </div>
+                </form>
+            </div> 
+        </div>
+       
         <form action="" class="vaccine">
             <h2>Vaccination schedule</h2>
             <table>
